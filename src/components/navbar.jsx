@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { useState } from 'react'; 
 import { IoMenu, IoClose } from "react-icons/io5";
 import { Link, NavLink } from 'react-router-dom';
@@ -27,7 +27,9 @@ export const Navbar = () => {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about_us">About us</NavLink></li>
                     
-                    <li><NavLink to="/services">Services<span className='arrow'></span></NavLink>
+                {/* <li><NavLink to="/services"> */}
+                <li><NavLink>
+                    Services<span className='arrow'></span></NavLink>
                     <ul className='dropdown'>
                     <li><NavLink to="/rsvp">RSVP</NavLink></li>
                     <li><NavLink to="/e-invite1">E-invite</NavLink></li>
